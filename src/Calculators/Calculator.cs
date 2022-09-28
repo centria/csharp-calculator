@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace GuiCalculator;
+
 using System.Windows.Forms;
-
-namespace GuiCalculator
+public partial class Calculator : Form
 {
-
-
-  public partial class Calculator : Form
-  {
     // Calculation variables
     private double accumulator = 0;
     private string lastOperation;
@@ -47,7 +36,7 @@ namespace GuiCalculator
     private TextBox results = new TextBox();
     public Calculator()
     {
-      InitializeComponent();
+        InitializeComponent();
     }
-  }
 }
+
